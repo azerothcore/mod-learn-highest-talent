@@ -103,7 +103,7 @@ public:
     learn_highest_talent_rank() : PlayerScript("learn_highest_talent_rank") {}
 
     // Called when a player's free talent points change (right before the change is applied)
-    void OnFreeTalentPointsChanged(Player* player, uint32 points)
+    void OnFreeTalentPointsChanged(Player* player, uint32 /* points */)
     {
         uint32 Talent_First_Rank[] =
         {
