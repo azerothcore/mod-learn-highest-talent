@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-MOD_NPCHIGHESTTALENT_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/" && pwd )"
+MOD_HIGHESTTALENT_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/" && pwd )"
 
-source "$MOD_NPCHIGHESTTALENT_ROOT/conf/conf.sh.dist"
+source "$MOD_HIGHESTTALENT_ROOT/conf/conf.sh.dist"
 
-if [ -f "$MOD_NPCHIGHESTTALENT_ROOT/conf/conf.sh" ]; then
-    source "$MOD_NPCHIGHESTTALENT_ROOT/conf/conf.sh"
+if [ -f "$MOD_HIGHESTTALENT_ROOT/conf/conf.sh" ]; then
+    source "$MOD_HIGHESTTALENT_ROOT/conf/conf.sh"
 fi
