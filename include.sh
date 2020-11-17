@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-TEMPLATENPC_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/" && pwd )"
+MOD_HIGHESTTALENT_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/" && pwd )"
 
-source $TEMPLATENPC_ROOT"/conf/conf.sh.dist"
+source "$MOD_HIGHESTTALENT_ROOT/conf/conf.sh.dist"
 
-if [ -f $TEMPLATENPC_ROOT"/conf/conf.sh" ]; then
-    source $TEMPLATENPC_ROOT"/conf/conf.sh"
+if [ -f "$MOD_HIGHESTTALENT_ROOT/conf/conf.sh" ]; then
+    source "$MOD_HIGHESTTALENT_ROOT/conf/conf.sh"
 fi
