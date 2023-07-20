@@ -1,19 +1,19 @@
 /* ================================================================
     AzerothCore 3.3.5 module ~ coded by mindsear
-	
+
     Players will automatically learn the highest talent rank
-	when they click on a talent spell
-	Intended for "instant level 80" private servers
-	
-   ================================================================ */
+    when they click on a talent spell
+    Intended for "instant level 80" private servers
+
+================================================================ */
 
 #include "Player.h"
 #include "ScriptMgr.h"
 
 enum Hunter_Talents
 {
-    Wyvern_Sting = 19386, 
-    Explosive_Shot = 53301, 
+    Wyvern_Sting = 19386,
+    Explosive_Shot = 53301,
     Counter_Attack = 19306,
     Aimed_Shot = 19434,
     Black_Arrow = 3674
@@ -21,10 +21,10 @@ enum Hunter_Talents
 
 enum Death_Kight_Talents
 {
-    Heart_Strike = 55050, 
-    Frost_Strike = 49143, 
-    Howling_Blast = 49184, 
-    Scourge_Strike = 55090, 
+    Heart_Strike = 55050,
+    Frost_Strike = 49143,
+    Howling_Blast = 49184,
+    Scourge_Strike = 55090,
     Corpse_Explosion = 49158
 };
 
@@ -65,17 +65,17 @@ enum Warlock_Talents
 
 enum Rogue_Talents
 {
-    Hemorrhage = 16511, 
+    Hemorrhage = 16511,
     Mutilate = 1329
 };
 
 enum Priest_Talents
 {
     Vampiric_Touch = 34914,
-    Penance = 47540, 
-    Lightwell = 724, 
-    Desperate_Prayer = 19236, 
-    Circle_of_Healing = 34861, 
+    Penance = 47540,
+    Lightwell = 724,
+    Desperate_Prayer = 19236,
+    Circle_of_Healing = 34861,
     Mind_Flay = 15407
 };
 
@@ -89,12 +89,12 @@ enum Shaman_Talents
 
 enum Druid_Talents
 {
-    Typhoon = 50516, 
-    Starfall = 48505, 
-    Wild_Growth = 48438, 
-    Insect_Swarm = 5570, 
-    Mangle_Cat = 33876, 
-    Mangle_Bear = 33878 
+    Typhoon = 50516,
+    Starfall = 48505,
+    Wild_Growth = 48438,
+    Insect_Swarm = 5570,
+    Mangle_Cat = 33876,
+    Mangle_Bear = 33878
 };
 
 class learn_highest_talent_rank : public PlayerScript
